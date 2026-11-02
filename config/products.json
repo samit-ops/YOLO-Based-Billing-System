@@ -1,0 +1,58 @@
+{
+  "cell phone": {
+    "display_name": "Mobile Phone",
+    "price": 25000,
+    "gst": 18,
+    "discount": 5,
+    "stock": 9,
+    "minimum_stock": 3
+  },
+  "laptop": {
+    "display_name": "MacBook",
+    "price": 85000,
+    "gst": 18,
+    "discount": 8,
+    "stock": 5,
+    "minimum_stock": 2
+  },
+  "bottle": {
+    "display_name": "Water Bottle",
+    "price": 100,
+    "gst": 5,
+    "discount": 0,
+    "stock": 20,
+    "minimum_stock": 5
+  },
+  "mouse": {
+    "display_name": "Wireless Mouse",
+    "price": 800,
+    "gst": 18,
+    "discount": 10,
+    "stock": 15,
+    "minimum_stock": 4
+  },
+  "clock": {
+    "display_name": "Analog Watch",
+    "price": 1500,
+    "gst": 18,
+    "discount": 5,
+    "stock": 8,
+    "minimum_stock": 2
+  },
+  "keyboard": {
+    "display_name": "Keyboard",
+    "price": 1200,
+    "gst": 18,
+    "discount": 5,
+    "stock": 10,
+    "minimum_stock": 3
+  },
+  "book": {
+    "display_name": "Notebook",
+    "price": 80,
+    "gst": 5,
+    "discount": 0,
+    "stock": 25,
+    "minimum_stock": 5
+  }
+}

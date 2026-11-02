@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Product Scanner</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Product Scanner</h1>
+        <p>YOLO-Based Automatic Billing and Inventory System</p>
+    </header>
+
+    <main class="container">
+
+        <section class="camera-section">
+            <h2>Product Scanner</h2>
+
+            <video id="camera" autoplay playsinline></video>
+
+            <canvas id="canvas" style="display: none;"></canvas>
+
+            <div class="buttons">
+                <button id="startCamera">Start Camera</button>
+                <button id="scanProduct">Scan Product</button>
+                <input type="file" id="uploadImage" accept="image/*" style="display: none;">
+                <button id="uploadButton" type="button">Upload Image</button>
+            </div>
+
+            <p id="detectionStatus">Camera not started.</p>
+            <img id="annotatedImage" style="display:none; max-width: 100%; border-radius: 8px; margin-top: 10px;" alt="Detection Result">
+        </section>
+
+        <section class="bill-section">
+            <h2>Current Bill</h2>
+
+            <div id="billItems">
+                <p>No items added.</p>
+            </div>
+
+            <div class="bill-summary">
+                <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+                <p>Discount: ₹<span id="discount">0.00</span></p>
+                <p>GST: ₹<span id="gst">0.00</span></p>
+                <h3>Total: ₹<span id="total">0.00</span></h3>
+            </div>
+
+            <button id="clearBill" class="danger-button">
+                Clear Bill
+            </button>
+        </section>
+
+        <section class="inventory-section">
+            <h2>Inventory</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Stock</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="inventoryTable"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>

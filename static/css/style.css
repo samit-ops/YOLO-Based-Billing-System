@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.camera-section {
+    grid-row: span 2;
+}
+
+video {
+    width: 100%;
+    max-height: 420px;
+    background: #111;
+    border-radius: 8px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 11px 16px;
+    margin: 8px 4px 8px 0;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.danger-button {
+    background: #dc2626;
+}
+
+.danger-button:hover {
+    background: #b91c1c;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.bill-row button {
+    background: #dc2626;
+    padding: 6px 10px;
+}
+
+.low-stock {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.out-of-stock {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.available {
+    color: #15803d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .camera-section {
+        grid-row: auto;
+    }
+}
